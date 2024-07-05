@@ -268,17 +268,11 @@ void AnnotatedCameraWidget::drawHud(QPainter &p) {
       p.setFont(InterFont(66));
       drawText(p, rect().center().x(), 290, speedUnit, 200);
     }
-  if (!(scene.hide_speed || bigMapOpen)) {
-    p.setFont(InterFont(176, QFont::Bold));
-    drawText(p, rect().center().x(), 230, speedStr);
-    p.setFont(InterFont(64));
-    drawText(p, rect().center().x(), 280, speedUnit, 200);
   }
-
   p.restore();
-    // NDA neokii
+  // NDA neokii
   drawRoadLimitSpeed(p);
-  }
+
 }
 
 void AnnotatedCameraWidget::drawText(QPainter &p, int x, int y, const QString &text, int alpha, bool overridePen) {
