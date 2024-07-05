@@ -278,6 +278,7 @@ void AnnotatedCameraWidget::drawHud(QPainter &p) {
   p.restore();
     // NDA neokii
   drawRoadLimitSpeed(p);
+  }
 }
 
 void AnnotatedCameraWidget::drawText(QPainter &p, int x, int y, const QString &text, int alpha, bool overridePen) {
