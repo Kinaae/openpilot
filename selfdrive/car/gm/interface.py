@@ -272,9 +272,9 @@ class CarInterface(CarInterfaceBase):
         ret.safetyConfigs[0].safetyParam |= Panda.FLAG_GM_PEDAL_LONG
         # Note: Low speed, stop and go not tested. Should be fairly smooth on highway
         ret.longitudinalTuning.kpBP = [0., 3., 6., 35.]
-        ret.longitudinalTuning.kpV = [0.11, 0.16, 0.20, 0.30]
+        ret.longitudinalTuning.kpV = [0.05, 0.8, 0.10, 0.18]
         ret.longitudinalTuning.kiBP = [0., 35.0]
-        ret.longitudinalTuning.kiV = [0.1, 0.07]
+        ret.longitudinalTuning.kiV = [0.05, 0.05]
         ret.longitudinalTuning.kf = 0.25
         ret.stoppingDecelRate = 0.8
       else:  # Pedal used for SNG, ACC for longitudinal control otherwise
